@@ -1,0 +1,104 @@
+{
+  "config": {
+    "configFile": "/Users/amikhedkina/Desktop/learning/playwright.config.ts",
+    "rootDir": "/Users/amikhedkina/Desktop/learning",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/amikhedkina/Desktop/learning/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "/Users/amikhedkina/Desktop/learning",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/basicInteractions.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/basicInteractions.test.ts",
+      "file": "tests/basicInteractions.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Checkbox",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1371,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-04T18:33:12.122Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8550347d925177e1da7-382f133cb114237afd80",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 36,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
