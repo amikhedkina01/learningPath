@@ -1,11 +1,12 @@
 import { PlaywrightTestConfig, defineConfig, devices } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/basicInteractions.test.ts"],
+  testMatch: ["tests/dropdown.test.ts"],
   use: {
+    headless: false,
     actionTimeout: 0,
     trace: 'off',
-    screenshot: "off",
+    screenshot: "on",
     //viewport: { width: 1920, height: 1080 },
     // video: 'off',
     contextOptions: {

@@ -1,7 +1,7 @@
-import { expect, test } from "@playwright/test";
+import {chromium, test, expect} from "@playwright/test"
 
 test("text input test", async ({page}) => {
-    
+
     await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo");
     const messageInput = page.locator("input#user-message");
     await messageInput.scrollIntoViewIfNeeded();

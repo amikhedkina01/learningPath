@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/amikhedkina/Desktop/learning/playwright.config.ts",
-    "rootDir": "/Users/amikhedkina/Desktop/learning",
+    "configFile": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/playwright.config.ts",
+    "rootDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,35 +39,35 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/amikhedkina/Desktop/learning/test-results",
+        "outputDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "/Users/amikhedkina/Desktop/learning",
+        "testDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath",
         "testIgnore": [],
         "testMatch": [
-          "tests/basicInteractions.test.ts"
+          "tests/dropdown.test.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.38.0",
+    "version": "1.38.1",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests/basicInteractions.test.ts",
-      "file": "tests/basicInteractions.test.ts",
+      "title": "tests/dropdown.test.ts",
+      "file": "tests/dropdown.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Checkbox",
-          "ok": true,
+          "title": "handling multi select",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,22 +79,52 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1371,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 11110,
+                  "error": {
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Texas\"\u001b[39m\nReceived string: \u001b[31m\"First selected option is : \"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//div[contains(@class,\\'w-4/12 smtablet:w-full\\')]//p[1]')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Texas\"\u001b[39m\nReceived string: \u001b[31m\"First selected option is : \"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//div[contains(@class,\\'w-4/12 smtablet:w-full\\')]//p[1]')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/dropdown.test.ts:43:88",
+                    "location": {
+                      "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/dropdown.test.ts",
+                      "column": 88,
+                      "line": 43
+                    },
+                    "snippet": "  41 | //   const text = page.locator(\"//div[contains(@class,'w-4/12 smtablet:w-full')]//p[1]\").textContent();\n  42 | //   console.log(text);\n> 43 |   await expect(page.locator(\"//div[contains(@class,'w-4/12 smtablet:w-full')]//p[1]\")).toHaveText(\"Texas\");\n     |                                                                                        ^\n  44 | });\n  45 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/dropdown.test.ts",
+                        "column": 88,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Texas\"\u001b[39m\nReceived string: \u001b[31m\"First selected option is : \"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//div[contains(@class,\\'w-4/12 smtablet:w-full\\')]//p[1]')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"text-size-14\">…</p>\u001b[22m\n\u001b[2m  -   unexpected value \"First selected option is : \"\u001b[22m\n\n\n  41 | //   const text = page.locator(\"//div[contains(@class,'w-4/12 smtablet:w-full')]//p[1]\").textContent();\n  42 | //   console.log(text);\n> 43 |   await expect(page.locator(\"//div[contains(@class,'w-4/12 smtablet:w-full')]//p[1]\")).toHaveText(\"Texas\");\n     |                                                                                        ^\n  44 | });\n  45 |\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/dropdown.test.ts:43:88"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-04T18:33:12.122Z",
-                  "attachments": []
+                  "startTime": "2023-10-09T15:27:50.517Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-dropdown-handling-multi-select/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/dropdown.test.ts",
+                    "column": 88,
+                    "line": 43
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "e8550347d925177e1da7-382f133cb114237afd80",
-          "file": "tests/basicInteractions.test.ts",
-          "line": 36,
+          "id": "6a3d7e996dd4874286aa-14fe034c6175155a80ca",
+          "file": "tests/dropdown.test.ts",
+          "line": 18,
           "column": 5
         }
       ]
