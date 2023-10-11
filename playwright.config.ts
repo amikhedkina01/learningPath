@@ -7,6 +7,9 @@ const config: PlaywrightTestConfig = {
     actionTimeout: 0,
     trace: 'off',
     screenshot: "on",
+    // launchOptions: {
+    //   slowMo: 1000
+    // },
     //viewport: { width: 1920, height: 1080 },
     // video: 'off',
     contextOptions: {
