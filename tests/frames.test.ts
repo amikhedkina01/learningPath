@@ -36,6 +36,7 @@ test("Interact with frames. v2",async ({page}) => {
     await frame.locator("input[name='fname']").fill("Test")
     await frame.locator("input[name='lname']").fill("Test 2");
     await page.waitForTimeout(3000);
+    
 
     expect(frame?.locator("p.has-text-info").textContent()).toContain("You have entered") //doesn't work properly
 

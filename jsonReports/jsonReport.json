@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "tests/frames.test.ts",
-      "file": "tests/frames.test.ts",
+      "title": "tests/tabsInteractions.test.ts",
+      "file": "tests/tabsInteractions.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Nested frames",
-          "ok": false,
+          "title": "Interact with multiple tabs",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,50 +79,37 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30000,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/frames.test.ts",
-                        "column": 53,
-                        "line": 56
-                      },
-                      "message": "Error: locator.fill: Page closed\n=========================== logs ===========================\nwaiting for frameLocator('#firstFr').frameLocator('iframe[scr=\\'innerFrame\\']').locator('input[name=\\'email\\']')\n============================================================\n\n  54 |\n  55 |     const innerFrame = frame.frameLocator(\"iframe[scr='innerFrame']\")\n> 56 |     await innerFrame.locator(\"input[name='email']\").fill('email@gmail.com')\n     |                                                     ^\n  57 |    \n  58 |\n  59 |     await page.waitForTimeout(3000);\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/frames.test.ts:56:53"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.fill at tests/frames.test.ts:56:53\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2507,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "no of frames 13\n"
+                      "text": "[\n  \u001b[90mundefined\u001b[39m,\n  \u001b[36m<ref *1>\u001b[39m Page {\n    _events: [Object: null prototype] { close: \u001b[36m[Function]\u001b[39m, crash: \u001b[36m[Function]\u001b[39m },\n    _eventsCount: \u001b[33m2\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _connection: Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m11\u001b[39m,\n      _callbacks: \u001b[36m[Map]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      _closedErrorMessage: \u001b[90mundefined\u001b[39m,\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _tracingCount: \u001b[33m0\u001b[39m,\n      _instrumentation: {},\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _parent: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@282704acffb78d29f5bafdd737c5ea08'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _objects: Map(1) { \u001b[32m'frame@e4c0cd39ffb9dd1da5e640bb7e519213'\u001b[39m => \u001b[36m[Frame]\u001b[39m },\n    _type: \u001b[32m'Page'\u001b[39m,\n    _guid: \u001b[32m'page@db1cb7978193b9ba10be3a576d094ea9'\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m11\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _object: \u001b[36m[Circular *1]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _initializer: {\n      mainFrame: \u001b[36m[EventEmitter]\u001b[39m,\n      viewportSize: \u001b[36m[Object]\u001b[39m,\n      isClosed: \u001b[33mfalse\u001b[39m,\n      opener: \u001b[36m[EventEmitter]\u001b[39m\n    },\n    _logger: \u001b[90mundefined\u001b[39m,\n    _instrumentation: {},\n    _eventToSubscriptionMapping: Map(7) {\n      \u001b[32m'console'\u001b[39m => \u001b[32m'console'\u001b[39m,\n      \u001b[32m'dialog'\u001b[39m => \u001b[32m'dialog'\u001b[39m,\n      \u001b[32m'request'\u001b[39m => \u001b[32m'request'\u001b[39m,\n      \u001b[32m'response'\u001b[39m => \u001b[32m'response'\u001b[39m,\n      \u001b[32m'requestfinished'\u001b[39m => \u001b[32m'requestFinished'\u001b[39m,\n      \u001b[32m'requestfailed'\u001b[39m => \u001b[32m'requestFailed'\u001b[39m,\n      \u001b[32m'filechooser'\u001b[39m => \u001b[32m'fileChooser'\u001b[39m\n    },\n    _browserContext: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@282704acffb78d29f5bafdd737c5ea08'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _ownedContext: \u001b[90mundefined\u001b[39m,\n    _mainFrame: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Circular *1]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@e4c0cd39ffb9dd1da5e640bb7e519213'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://twitter.com/Lambdatesting'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: Set(0) {},\n      _page: \u001b[36m[Circular *1]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _frames: Set(1) { \u001b[36m[Frame]\u001b[39m },\n    _workers: Set(0) {},\n    _closed: \u001b[33mfalse\u001b[39m,\n    _closedOrCrashedScope: LongStandingScope {\n      _terminateError: \u001b[90mundefined\u001b[39m,\n      _terminateErrorMessage: \u001b[90mundefined\u001b[39m,\n      _terminatePromises: Map(0) {},\n      _isClosed: \u001b[33mfalse\u001b[39m\n    },\n    _viewportSize: { width: \u001b[33m575\u001b[39m, height: \u001b[33m400\u001b[39m },\n    _routes: [],\n    accessibility: Accessibility { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    coverage: Coverage { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    keyboard: Keyboard { _page: \u001b[36m[Circular *1]\u001b[39m },\n    mouse: Mouse { _page: \u001b[36m[Circular *1]\u001b[39m },\n    request: APIRequestContext {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[BrowserContext]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'APIRequestContext'\u001b[39m,\n      _guid: \u001b[32m'request-context@ca85f5abb00c0464e8b44f7b086a6c84'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _request: \u001b[90mundefined\u001b[39m,\n      _tracing: \u001b[36m[Tracing]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    touchscreen: Touchscreen { _page: \u001b[36m[Circular *1]\u001b[39m },\n    _bindings: Map(0) {},\n    _timeoutSettings: TimeoutSettings {\n      _parent: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _defaultTimeout: \u001b[90mundefined\u001b[39m,\n      _defaultNavigationTimeout: \u001b[90mundefined\u001b[39m\n    },\n    _video: \u001b[1mnull\u001b[22m,\n    _opener: Page {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m2\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[BrowserContext]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'Page'\u001b[39m,\n      _guid: \u001b[32m'page@79f4a13dd5581e23ae8839394f65a509'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _browserContext: \u001b[36m[BrowserContext]\u001b[39m,\n      _ownedContext: \u001b[90mundefined\u001b[39m,\n      _mainFrame: \u001b[36m[Frame]\u001b[39m,\n      _frames: \u001b[36m[Set]\u001b[39m,\n      _workers: Set(0) {},\n      _closed: \u001b[33mfalse\u001b[39m,\n      _closedOrCrashedScope: \u001b[36m[LongStandingScope]\u001b[39m,\n      _viewportSize: \u001b[36m[Object]\u001b[39m,\n      _routes: [],\n      accessibility: \u001b[36m[Accessibility]\u001b[39m,\n      coverage: \u001b[36m[Coverage]\u001b[39m,\n      keyboard: \u001b[36m[Keyboard]\u001b[39m,\n      mouse: \u001b[36m[Mouse]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      touchscreen: \u001b[36m[Touchscreen]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _video: \u001b[1mnull\u001b[22m,\n      _opener: \u001b[1mnull\u001b[22m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  }\n]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-16T15:47:02.012Z",
+                  "startTime": "2023-10-16T18:21:32.578Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-frames-Nested-frames/test-failed-1.png"
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-tabsInteractions-Interact-with-multiple-tabs/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-tabsInteractions-Interact-with-multiple-tabs/test-finished-2.png"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-72374a779e884292e463",
-          "file": "tests/frames.test.ts",
-          "line": 44,
+          "id": "69340913f909b4f3a4e8-46dc91836360dbc9d983",
+          "file": "tests/tabsInteractions.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
