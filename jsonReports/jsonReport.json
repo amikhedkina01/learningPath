@@ -47,7 +47,7 @@
         "testDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/dropdown.test.ts",
-      "file": "tests/dropdown.test.ts",
+      "title": "tests/frames.test.ts",
+      "file": "tests/frames.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "bootstap dropdown v2",
+          "title": "Interact with frames",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,17 +80,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9147,
+                  "duration": 6464,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-10T15:21:51.491Z",
+                  "startTime": "2023-10-16T13:43:27.973Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-dropdown-bootstap-dropdown-v2/test-finished-1.png"
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-frames-Interact-with-frames/test-finished-1.png"
                     }
                   ]
                 }
@@ -98,10 +98,10 @@
               "status": "expected"
             }
           ],
-          "id": "6a3d7e996dd4874286aa-b7261892e2066c1d763d",
-          "file": "tests/dropdown.test.ts",
-          "line": 95,
-          "column": 6
+          "id": "ee77907c2abffffa1fe6-9630d085b8591ad675e7",
+          "file": "tests/frames.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
