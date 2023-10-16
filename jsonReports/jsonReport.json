@@ -66,8 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "Interact with frames",
-          "ok": true,
+          "title": "Nested frames",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,28 +79,50 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 6464,
-                  "errors": [],
-                  "stdout": [],
+                  "status": "timedOut",
+                  "duration": 30000,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/frames.test.ts",
+                        "column": 53,
+                        "line": 56
+                      },
+                      "message": "Error: locator.fill: Page closed\n=========================== logs ===========================\nwaiting for frameLocator('#firstFr').frameLocator('iframe[scr=\\'innerFrame\\']').locator('input[name=\\'email\\']')\n============================================================\n\n  54 |\n  55 |     const innerFrame = frame.frameLocator(\"iframe[scr='innerFrame']\")\n> 56 |     await innerFrame.locator(\"input[name='email']\").fill('email@gmail.com')\n     |                                                     ^\n  57 |    \n  58 |\n  59 |     await page.waitForTimeout(3000);\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/frames.test.ts:56:53"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.fill at tests/frames.test.ts:56:53\n"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "no of frames 13\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-16T13:43:27.973Z",
+                  "startTime": "2023-10-16T15:47:02.012Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-frames-Interact-with-frames/test-finished-1.png"
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-frames-Nested-frames/test-failed-1.png"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-9630d085b8591ad675e7",
+          "id": "ee77907c2abffffa1fe6-72374a779e884292e463",
           "file": "tests/frames.test.ts",
-          "line": 3,
+          "line": 44,
           "column": 5
         }
       ]
