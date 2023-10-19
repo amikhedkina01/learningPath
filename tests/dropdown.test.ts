@@ -1,5 +1,8 @@
 import { test, expect } from "@playwright/test";
 
+
+
+
 test("handling dropdown", async ({ page }) => {
   await page.goto(
     "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"
@@ -23,23 +26,21 @@ test("handling multi select", async ({ page }) => {
   );
   await page.selectOption("#multi-select", [
     {
-      label: "Texas",
+      label: "Texas"
     },
     {
-      index: 3,
-    },
-    {
-      value: "Pennsylvania",
-    },
+        label: "Ohio"
+    }
+
   ]);
   // await page.locator("//option[@value='Texas']").click();
   await page.waitForTimeout(1000);
 
   await page.locator("//button[text()='First Selected']").click();
 
-  await page.locator("//button[text()='First Selected']").dblclick();
+//   await page.locator("//button[text()='First Selected']").dblclick();
 
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(4000);
   //   const text = page.locator("//div[contains(@class,'w-4/12 smtablet:w-full')]//p[1]").textContent();
   //   console.log(text);
   await expect(page.locator("//p[@class='text-size-14']//span[1]")).toHaveText(

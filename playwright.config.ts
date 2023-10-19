@@ -2,10 +2,26 @@ import { PlaywrightTestConfig, defineConfig, devices } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
   // testMatch: ["tests/dropdown.test.ts"],
+  
+
+  // Shared account in all tests
+  
+  // projects: [
+  //   { name: "setup", testMatch: /.*\.setup\.ts/ },
+  //   {
+  //     name: "Google Chrome",
+  //     use: { 
+  //       ...devices["Desktop Chrome"], 
+  //       channel: "chrome",
+  //       storageState: 'playwright/.auth/user.json',
+  //     },
+  //     dependencies: ['setup'] 
+  //   }, 
+  // ],
   use: {
     headless: false,
     actionTimeout: 0,
-    trace: 'off',
+    trace: "off",
     screenshot: "on",
     // launchOptions: {
     //   slowMo: 1000
@@ -14,9 +30,9 @@ const config: PlaywrightTestConfig = {
     // video: 'off',
     contextOptions: {
       // recordVideo: {
-      //   dir: './jsonReports' // TODO fix the impossiblility to attach to index.html file 
+      //   dir: './jsonReports' // TODO fix the impossiblility to attach to index.html file
       // }
-    }
+    },
   },
   retries: 0,
   reporter: [
