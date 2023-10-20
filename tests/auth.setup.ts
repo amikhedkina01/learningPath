@@ -9,11 +9,11 @@ setup('authenticate', async ({ page }) => {
     await page.click("text=Login");
     await page.locator("#input-email").fill("alina.mikhedkina@gmail.com")
     await page.locator("#input-password").fill("@@szmpXQsrGvaX8")
-    await page.getByRole("button", {name:'Login'})
+    await page.getByRole("button", {name:'Login'}).click();
     await page.waitForTimeout(3000);
     await page.waitForURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
 
-    await expect(page.getByRole('button', { name: 'Edit your account information' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Edit your account information' })).toBeVisible();
 
     await page.context().storageState({ path: authFile });
 

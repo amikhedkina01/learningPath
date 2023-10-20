@@ -42,12 +42,25 @@
         "outputDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "",
-        "name": "",
+        "id": "setup",
+        "name": "setup",
         "testDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/loginE2E.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,69 +73,91 @@
   },
   "suites": [
     {
-      "title": "tests/loginE2E.test.ts",
-      "file": "tests/loginE2E.test.ts",
+      "title": "tests/auth.setup.ts",
+      "file": "tests/auth.setup.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
-          "ok": false,
+          "title": "authenticate",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
+              "projectId": "setup",
+              "projectName": "setup",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 10236,
-                  "error": {
-                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Edit your account information' })\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Edit your account information' })\u001b[22m\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/loginE2E.test.ts:13:87",
-                    "location": {
-                      "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/loginE2E.test.ts",
-                      "column": 87,
-                      "line": 13
-                    },
-                    "snippet": "  11 |     await page.getByRole('button', {name: 'Login'}).click();\n  12 |     await page.waitForURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');\n> 13 |     await expect(page.getByRole('button', { name: 'Edit your account information' })).toBeVisible();    \n     |                                                                                       ^\n  14 |\n  15 | })"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/loginE2E.test.ts",
-                        "column": 87,
-                        "line": 13
-                      },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Edit your account information' })\u001b[22m\n\n\n  11 |     await page.getByRole('button', {name: 'Login'}).click();\n  12 |     await page.waitForURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');\n> 13 |     await expect(page.getByRole('button', { name: 'Edit your account information' })).toBeVisible();    \n     |                                                                                       ^\n  14 |\n  15 | })\n\n    at /Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/loginE2E.test.ts:13:87"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 8100,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-19T16:08:37.548Z",
+                  "startTime": "2023-10-20T17:41:03.893Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-loginE2E-Login-test-demo/test-failed-1.png"
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-auth.setup.ts-authenticate-setup/test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/tests/loginE2E.test.ts",
-                    "column": 87,
-                    "line": 13
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "4c0bd2fb2c05fd1f453f-6f6ee3e94ac3d457ccaf",
+          "id": "5cfdf7d9fac68b9178d2-87d4a96bb83ad83b361c",
+          "file": "tests/auth.setup.ts",
+          "line": 5,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "tests/loginE2E.test.ts",
+      "file": "tests/loginE2E.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 7388,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-20T17:41:13.629Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/amikhedkina/Desktop/learning/learningPath/learningPath/test-results/tests-loginE2E-Login-Google-Chrome/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4c0bd2fb2c05fd1f453f-b1526aab14f0c8d42b70",
           "file": "tests/loginE2E.test.ts",
           "line": 3,
           "column": 5
